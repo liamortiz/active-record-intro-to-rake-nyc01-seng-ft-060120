@@ -15,7 +15,7 @@ end
 
 namespace :db do
   desc 'migrate changes to your database'
-  require_relative './config/environment'
+  require_relative "../lib/student.rb"
   
   task :migrate => :environment do
     Student.create_table
