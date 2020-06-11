@@ -12,12 +12,3 @@ end
 
 task :console do
 end
-
-namespace :db do
-  desc 'migrate changes to your database'
-  require_relative "../lib/student.rb"
-  
-  task :migrate => :environment do
-    Student.create_table
-  end
-end
